@@ -134,7 +134,7 @@ const HeroSection = () => {
           transition={{ delay: 0.3, duration: 0.7 }}
         >
           <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 mt-0">
-            Hi, I'm{" "}
+            Hi, I&apos;m{" "}
             <span className="text-indigo-600 border-r-2 border-indigo-600 pr-1 animate-pulse">
               {nameText}
             </span>

@@ -8,7 +8,7 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-3 text-white">About Me</h2>
           <p className="text-sm text-gray-400">
-            I'm Semir Sultan, a frontend developer passionate about crafting modern, responsive, and clean web experiences. Always building, always learning.
+            I&apos;m Semir Sultan, a frontend developer passionate about crafting modern, responsive, and clean web experiences. Always building, always learning.
           </p>
         </div>
 
@@ -27,19 +27,19 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-3 text-white">Follow Me</h2>
           <div className="flex space-x-4 text-xl">
-            <a href="https://github.com/yourusername" target="_blank" className="hover:text-white transition">
+            <a href="https://github.com/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" className="hover:text-white transition">
+            <a href="https://linkedin.com/in/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://instagram.com/yourusername" target="_blank" className="hover:text-white transition">
+            <a href="https://instagram.com/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://t.me/yourusername" target="_blank" className="hover:text-white transition">
+            <a href="https://t.me/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaTelegram />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" className="hover:text-white transition">
+            <a href="https://twitter.com/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaTwitter />
             </a>
           </div>
