@@ -61,7 +61,7 @@ const SocialSidebar: React.FC = () => {
     <AnimatePresence>
       {showSidebar && (
         <motion.div
-          className="fixed top-1/3 left-0 z-50 flex flex-col space-y-3"
+          className="hidden md:flex fixed top-1/3 left-0 z-50 flex-col space-y-3"
           initial={{ x: -100, opacity: 0 }}
           animate={{ x: 0, opacity: 1 }}
           exit={{ x: -100, opacity: 0 }}
@@ -81,14 +81,13 @@ const SocialSidebar: React.FC = () => {
                 {social.icon}
               </div>
               <span
-  className="overflow-hidden whitespace-nowrap 
-             max-w-0 group-hover:max-w-[160px]
-             pl-0 group-hover:pl-2 
-             transition-all duration-300 text-sm"
->
-  {social.name}
-</span>
-                
+                className="overflow-hidden whitespace-nowrap 
+                           max-w-0 group-hover:max-w-[160px]
+                           pl-0 group-hover:pl-2 
+                           transition-all duration-300 text-sm"
+              >
+                {social.name}
+              </span>
             </motion.a>
           ))}
         </motion.div>

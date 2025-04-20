@@ -10,41 +10,29 @@ interface Experience {
 
 const experiences: Experience[] = [
   {
-    title: "Frontend Developer",
-    company: "Creative Studio",
-    period: "2021 - 2022",
-    description: "Developed responsive UI with React and TailwindCSS."
+    title: "Sunny Side school",
+    company: "pre school",
+    period: "2020 - 2021",
+    description: "I learned and developed intrest in computer science in this time so i was working on basics of html and css at that time "
   },
   {
-    title: "Full Stack Developer",
-    company: "TechZone Inc.",
+    title: "Odin Project",
+    company: "odin projects",
     period: "2022 - 2023",
-    description: "Worked on APIs, databases, and user authentication."
+    description: "Worked on advanced js,html, css , databases, and user authentication."
   },
   {
-    title: "App Developer",
-    company: "MobileSpark",
-    period: "2023 - Present",
-    description: "Built cross-platform apps using Flutter and Firebase."
+    title: "Saint Mary's University",
+    company: "Saint mary's University",
+    period: "2023 - 2024",
+    description: "Built cross-platform apps and websites using Flutter and Firebase. react ,nextjs,... and other frameworks"
   },
   {
-    title: "Frontend Developer",
+    title: "Freelancing",
     company: "Creative Studio",
-    period: "2021 - 2022",
-    description: "Developed responsive UI with React and TailwindCSS."
-  },
-  {
-    title: "Full Stack Developer",
-    company: "TechZone Inc.",
-    period: "2022 - 2023",
-    description: "Worked on APIs, databases, and user authentication."
-  },
-  {
-    title: "App Developer",
-    company: "MobileSpark",
-    period: "2023 - Present",
-    description: "Built cross-platform apps using Flutter and Firebase."
-  },
+    period: "2025 - present",
+    description: "currently working on multiple projects using react, nextjs, and other frameworks. I am also working on my own projects and learning new technologies."
+  }
 ];
 
 const ExperienceZigzag: React.FC = () => {

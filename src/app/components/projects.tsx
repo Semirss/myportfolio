@@ -82,40 +82,40 @@ return(
  
   <ProjectCard
     title="Crimson plate"
-    description="A full-stack app for ordering food which is made up of html,css,js,php,mysql."
+    description="A full-stack web for ordering food which is made up of html,css,js,php,mysql."
     imageUrl="/pimgs/1.png"
-    githubUrl="https://github.com/your-username/healthcare-reception"
+    githubUrl="https://github.com/Semirss/Crimson--plate--final-web"
   />
  <ProjectCard
-    title="Healthcare Reception System"
-    description="A full-stack app for managing appointments and billing."
+    title="Skill Nova e-learning platform "
+    description="A full-stack web that provides a platform for online learning and courses."
     imageUrl="/pimgs/2.png"
-    githubUrl="https://github.com/your-username/healthcare-reception"
+    githubUrl="https://github.com/Semirss/Skill-Nova-elearning-web"
   />
  <ProjectCard
-    title="Healthcare Reception System"
-    description="A full-stack app for managing appointments and billing."
+    title="Basic speach recognition Ai"
+    description="An AI model that trained to recognize basic words and phrases and do certain tasks."
     imageUrl="/pimgs/16.png"
-    githubUrl="https://github.com/your-username/healthcare-reception"
+    githubUrl="https://github.com/Semirss/personal-assistant-AI"
   />
  <ProjectCard
-    title="Healthcare Reception System"
-    description="A full-stack app for managing appointments and billing."
-    imageUrl="/pimgs/4.png"
-    githubUrl="https://github.com/your-username/healthcare-reception"
+    title="other projects that i have done for learning purposes"
+    description="Browse my git hub"
+    imageUrl="/pimgs/9.png"
+    githubUrl="https://github.com/Semirss"
   />
  
  <ProjectCard
-    title="Healthcare Reception System"
-    description="A full-stack app for managing appointments and billing."
+    title="Portfolios and personal websites"
+    description="i desighned this in order to learn crud in php and mysql "
     imageUrl="/pimgs/6.png"
-    githubUrl="https://github.com/your-username/healthcare-reception"
+    githubUrl="https://github.com/Semirss/my-portfolio-using-database"
   />
  <ProjectCard
-    title="Healthcare Reception System"
-    description="A full-stack app for managing appointments and billing."
-    imageUrl="/pimgs/2.png"
-    githubUrl="https://github.com/your-username/healthcare-reception"
+    title="Wheather app"
+    description="its just a basic wheather app to show my skills in android studio commponents and api usage"
+    imageUrl="/pimgs/5.png"
+    githubUrl="https://github.com/Semirss/wheather-app-"
   />
  
 </div>

@@ -9,16 +9,16 @@ interface Skill {
 }
 
 const skills: Skill[] = [
-  { name: "HTML", icon: "html", level: 95 },
+  { name: "HTML", icon: "html", level: 100 },
   { name: "Javascript", icon: "javascript", level: 80 },
 
-  { name: "CSS", icon: "css", level: 90 },
-  { name: "Java", icon: "java", level: 80 },
-  { name: "Python", icon: "python", level: 88 },
-  { name: "PHP", icon: "php", level: 78 },
-  { name: "Dart", icon: "dart", level: 70 },
-  { name: "React", icon: "react", level: 92 },
-  { name: "Next.js", icon: "nextjs", level: 87 },
+  { name: "CSS", icon: "css", level: 100 },
+  { name: "Java", icon: "java", level: 50 },
+  { name: "Python", icon: "python", level: 78 },
+  { name: "PHP", icon: "php", level: 98 },
+  { name: "Dart", icon: "dart", level: 80 },
+  { name: "React", icon: "react", level: 96 },
+  { name: "Next.js", icon: "nextjs", level: 98 },
   { name: "MySQL", icon: "mysql", level: 80 },
   { name: "MongoDB", icon: "mongodb", level: 76 },
   { name: "Go", icon: "go", level: 60 },
@@ -27,7 +27,7 @@ const skills: Skill[] = [
   { name: "Flutter", icon: "flutter", level: 70 },
   { name: "Tailwind", icon: "tailwind", level: 90 },
   { name: "Bootstrap", icon: "bootstrap", level: 85 },
-  { name: "Unity", icon: "unity", level: 68 },
+  { name: "Unity", icon: "unity", level: 48 },
   { name: "Laravel", icon: "laravel", level: 75 },
   { name: "TypeScript", icon: "typescript", level: 89 },
 ];
