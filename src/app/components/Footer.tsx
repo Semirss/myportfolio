@@ -27,19 +27,19 @@ const Footer = () => {
         <div>
           <h2 className="text-xl font-semibold mb-3 text-white">Follow Me</h2>
           <div className="flex space-x-4 text-xl">
-            <a href="https://github.com/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
+            <a href="https://github.com/semirss" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaGithub />
             </a>
-            <a href="https://linkedin.com/in/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
+            <a href="https://www.linkedin.com/in/semir-sultan-b1142b299/" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaLinkedin />
             </a>
-            <a href="https://instagram.com/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
+            <a href="https://www.instagram.com/semir_ss1/" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaInstagram />
             </a>
-            <a href="https://t.me/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
+            <a href="https://t.me/@Ss1643" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaTelegram />
             </a>
-            <a href="https://twitter.com/yourusername" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
+            <a href="https://x.com/SemamanW" target="_blank" className="hover:text-white transition" rel="noopener noreferrer">
               <FaTwitter />
             </a>
           </div>

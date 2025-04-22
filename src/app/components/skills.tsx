@@ -21,13 +21,11 @@ const skills: Skill[] = [
   { name: "Next.js", icon: "nextjs", level: 98 },
   { name: "MySQL", icon: "mysql", level: 80 },
   { name: "MongoDB", icon: "mongodb", level: 76 },
-  { name: "Go", icon: "go", level: 60 },
   { name: "C++", icon: "cplusplus", level: 75 },
   { name: "C#", icon: "csharp", level: 85 },
   { name: "Flutter", icon: "flutter", level: 70 },
   { name: "Tailwind", icon: "tailwind", level: 90 },
   { name: "Bootstrap", icon: "bootstrap", level: 85 },
-  { name: "Unity", icon: "unity", level: 48 },
   { name: "Laravel", icon: "laravel", level: 75 },
   { name: "TypeScript", icon: "typescript", level: 89 },
 ];

@@ -47,7 +47,7 @@ const About = () => {
               <br />
               <br />
               I specialize in crafting dynamic web applications and mobile apps using{" "}
-              <a className="text-indigo-400 underline underline-offset-2" href="#Skills">
+              <a className="text-indigo-400 underline underline-offset-2" href="#Skill">
                 modern technologies
               </a>
               . Whether it’s a responsive website or an innovative mobile app, I’m always excited to bring ideas to

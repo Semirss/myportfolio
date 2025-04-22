@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { useEffect, useState } from "react";
 
 const name = "Semir Sultan";
+
 const titles = [
   "Full-Stack Developer",
   "Frontend Enthusiast",
@@ -64,11 +65,10 @@ const HeroSection = () => {
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <section className="relative h-147 bg-gradient-to-br from-rose-900 70% to-black overflow-hidden">
-      {/* Curved Top Background */}
+    <section className="relative h-170 bg-gradient-to-br from-rose-900 70% to-black overflow-hidden">
+    
       <div className="absolute top-0 left-0 w-full h-32 md:h-30 bg-indigo-500 z-10 rounded-b-[50%]" />
 
-      {/* Navigation */}
       <nav className="absolute top-6 right-10 z-30 text-gray-100 font-medium space-x-6 hidden md:flex">
         <a href="#" className="hover:text-indigo-600 transition">Home</a>
         <a href="#About" onClick={handleLinkClick} className="hover:text-indigo-600 transition">About</a>
@@ -77,7 +77,6 @@ const HeroSection = () => {
         <a href="#Contact" onClick={handleLinkClick} className="hover:text-indigo-600 transition">Contact</a>
       </nav>
 
-      {/* Mobile Nav Toggle */}
       <div className="md:hidden text-white absolute top-6 right-6 z-40">
         <button onClick={() => setMenuOpen(!menuOpen)} className="text-gray-700 focus:outline-none">
           <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"
@@ -88,7 +87,7 @@ const HeroSection = () => {
         </button>
       </div>
 
-      {/* Mobile Menu */}
+     
       <div className={`fixed top-0 right-0 w-full h-full text-white bg-gradient-to-br from-rose-900 to-black shadow-lg transform transition-transform z-50 ${menuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
         <div className="flex justify-end p-4">
           <button onClick={() => setMenuOpen(false)} className="text-white focus:outline-none">
@@ -108,9 +107,9 @@ const HeroSection = () => {
         </div>
       </div>
 
-      {/* Main Hero Section */}
+      
       <div className="relative z-20 flex flex-col md:flex-row items-center justify-center gap-10 px-6 sm:px-10 lg:px-20 mt-20 py-16 md:py-28 max-w-7xl mx-auto">
-        {/* Image First on Mobile */}
+     
         <motion.div
           className="relative w-36 h-36 sm:w-44 sm:h-44 md:w-56 md:h-56 lg:w-64 lg:h-64"
           initial={{ opacity: 0, y: -20 }}
@@ -126,7 +125,7 @@ const HeroSection = () => {
           />
         </motion.div>
 
-        {/* Text Content */}
+        
         <motion.div
           className="text-center md:text-left max-w-xl"
           initial={{ opacity: 0, x: 50 }}
@@ -159,13 +158,15 @@ const HeroSection = () => {
               My GitHub
             </motion.a>
             <motion.a
-              href="#projects"
-              whileHover={{ scale: 1.05 }}
-              whileTap={{ scale: 0.95 }}
-              className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition"
-            >
-              Download CV
-            </motion.a>
+        href="/semir sultan's Resume.pdf" 
+        download="Semir-Sultan-Resume.pdf"
+        whileHover={{ scale: 1.05 }}
+        whileTap={{ scale: 0.95 }}
+        className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition"
+>
+  Download CV
+</motion.a>
+
           </div>
         </motion.div>
       </div>
