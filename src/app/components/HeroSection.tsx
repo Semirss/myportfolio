@@ -25,7 +25,7 @@ const HeroSection = () => {
   const [menuOpen, setMenuOpen] = useState(false);
 
   useEffect(() => {
-    const speed = nameDeleting ? 11111400 : 500;
+    const speed = nameDeleting ? 100 : 500;
     const timeout = setTimeout(() => {
       if (!nameDeleting && nameIndex < name.length) {
         setNameText((prev) => prev + name[nameIndex]);
@@ -65,7 +65,7 @@ const HeroSection = () => {
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <section className="relative h-170 bg-gradient-to-br from-rose-900 70% to-black overflow-hidden">
+    <section   className="relative h-170 overflow-hidden">
     
       <div className="absolute top-0 left-0 w-full h-32 md:h-30 bg-indigo-500 z-10 rounded-b-[50%]" />
 
@@ -117,12 +117,14 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src="/3.jpg"
-            alt="Semir Sultan"
-            fill
-            className="rounded-full object-cover"
-            sizes="(max-width: 768px) 40vw, (max-width: 1200px) 25vw, 200px"
-          />
+        src="/3.jpg"
+        alt="Semir Sultan"
+        width={256} // same as lg:w-64
+        height={256}
+        className="rounded-full object-cover"
+        priority // this tells Next.js to preload this image
+      />
+      
         </motion.div>
 
         

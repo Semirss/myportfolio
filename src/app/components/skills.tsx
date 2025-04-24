@@ -32,7 +32,7 @@ const skills: Skill[] = [
 
 const Skills: React.FC = () => {
   return (
-    <section id="Skill" className="py-16 px-4 bg-gradient-to-br from-rose-900 to-black text-white">
+    <section id="Skill" className="py-16 px-4  text-white">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-3xl font-bold text-center mb-12"

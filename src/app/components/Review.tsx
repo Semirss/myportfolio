@@ -42,8 +42,8 @@ const ReviewCarousel = () => {
   };
 
   return (
-    <div id="Review" className="w-full py-10 px-4 bg-gradient-to-br from-black to-zinc-700 text-white">
-      <div className="max-w-xl mx-auto p-6 rounded-2xl shadow-xl border-amber-50 text-center">
+    <div id="Review" className="w-full py-10 px-4 text-white">
+      <div style={{border:"1px solid #fff"}} className="max-w-xl mx-auto p-6 rounded-2xl shadow-xl text-center">
         <div className="relative h-60">
           <AnimatePresence mode="wait">
             <motion.div

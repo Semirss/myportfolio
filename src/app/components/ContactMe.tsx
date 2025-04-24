@@ -30,7 +30,7 @@ const ContactMe = () => {
   };
 
   return (
-    <div id="Contact" className="w-full py-16 px-4 bg-gradient-to-br from-black to-zinc-700 text-white">
+    <div id="Contact" className="w-full py-16 px-4  text-white">
       <motion.div
         initial={{ opacity: 0, y: 100 }}
         whileInView={{ opacity: 1, y: 0 }}

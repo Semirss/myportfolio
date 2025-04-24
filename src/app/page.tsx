@@ -11,7 +11,7 @@ import SocialSidebar from "./components/SocialSidebar";
 import Footer from "./components/Footer";
 export default function Home() {
   return (
-   <main className="bg-gradient-to-br from-rose-900 overflow-hidden">
+   <main style={{ backgroundColor: "#0a192f" }}>
      <HeroSection />
      <SocialSidebar />
      <About  />

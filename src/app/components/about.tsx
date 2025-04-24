@@ -9,22 +9,23 @@ const About = () => {
 
   useEffect(() => {
     let i = 0;
-    const interval = setInterval(() => {
+    const typeNext = () => {
       setTypedText(fullText.slice(0, i + 1));
       i++;
-      if (i === fullText.length) clearInterval(interval);
-    }, 100);
-
-    return () => clearInterval(interval);
+      if (i < fullText.length) {
+        setTimeout(typeNext, 80);
+      }
+    };
+    typeNext();
   }, []);
 
   return (
-    <div id="About" className="bg-gradient-to-br from-rose-900 to-black py-16">
+    <div id="About" style={{ backgroundColor: "#0a192f" }}>
       <motion.section
         className="max-w-screen-xl mx-auto px-6 lg:px-16 rounded-2xl shadow-lg"
         initial={{ opacity: 0, y: 50 }}
         whileInView={{ opacity: 1, y: 0 }}
-        transition={{ duration: 1.5 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
         viewport={{ once: true }}
       >
         <div className="flex flex-col lg:flex-row items-center justify-between gap-12">
@@ -33,12 +34,14 @@ const About = () => {
             className="lg:w-7/12"
             initial={{ opacity: 0, x: -40 }}
             whileInView={{ opacity: 1, x: 0 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
             <h1 className="text-3xl sm:text-4xl font-extrabold text-indigo-600 mb-6">
               {typedText}
-              <span className="animate-pulse">|</span>
+              {typedText.length < fullText.length && (
+                <span className="animate-pulse">|</span>
+              )}
             </h1>
 
             <p className="text-lg sm:text-xl text-white mb-6 leading-relaxed">
@@ -92,7 +95,7 @@ const About = () => {
             initial={{ opacity: 0, x: 40 }}
             whileInView={{ opacity: 1, x: 0 }}
             whileHover={{ scale: 1.05, y: -10 }}
-            transition={{ duration: 1.5 }}
+            transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
             <img

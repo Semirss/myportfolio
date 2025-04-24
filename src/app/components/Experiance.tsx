@@ -37,7 +37,7 @@ const experiences: Experience[] = [
 
 const ExperienceZigzag: React.FC = () => {
   return (
-    <section id="Experience" className="py-20 bg-gradient-to-br from-black to-zinc-900 text-white">
+    <section id="Experience" className="py-20 text-white">
       <div className="max-w-6xl mx-auto px-4">
         <motion.h2
           className="text-3xl font-bold text-center mb-16"
