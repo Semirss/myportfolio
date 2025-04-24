@@ -88,7 +88,7 @@ const HeroSection = () => {
       </div>
 
      
-      <div className={`fixed top-0 right-0 w-full h-full text-white bg-gradient-to-br from-rose-900 to-black shadow-lg transform transition-transform z-50 ${menuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
+      <div style={{ backgroundColor: "#0a192f" }} className={`fixed top-0 right-0 w-full h-full text-white shadow-lg transform transition-transform z-50 ${menuOpen ? "translate-x-0" : "translate-x-full"} md:hidden`}>
         <div className="flex justify-end p-4">
           <button onClick={() => setMenuOpen(false)} className="text-white focus:outline-none">
             <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24"

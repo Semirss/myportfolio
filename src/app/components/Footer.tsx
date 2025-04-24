@@ -16,10 +16,10 @@ const Footer = () => {
         <div className="flex flex-col">
           <h2 className="text-xl font-semibold mb-3 text-white">Quick Links</h2>
           <ul className="space-y-2 text-sm text-gray-300">
-            <li><a href="#projects" className="hover:text-white transition">Projects</a></li>
-            <li><a href="#skills" className="hover:text-white transition">Skills</a></li>
-            <li><a href="#contact" className="hover:text-white transition">Contact</a></li>
-            <li><a href="#reviews" className="hover:text-white transition">Testimonials</a></li>
+            <li><a href="#Project" className="hover:text-white transition">Projects</a></li>
+            <li><a href="#Skill" className="hover:text-white transition">Skills</a></li>
+            <li><a href="#Contact" className="hover:text-white transition">Contact</a></li>
+            <li><a href="#Review" className="hover:text-white transition">Testimonials</a></li>
           </ul>
         </div>
 
