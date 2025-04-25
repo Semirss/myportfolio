@@ -138,10 +138,10 @@ export default function Projects() {
             githubUrl="https://github.com/Semirss/my-portfolio-using-database"
           />
           <ProjectCard
-            title="Weather App"
-            description="A simple weather app showcasing API integration and UI design."
-            imageUrl="/pimgs/5.png"
-            githubUrl="https://github.com/Semirss/wheather-app-"
+            title="Weather Web"
+            description="A simple weather website showcasing API integration and UI design."
+            imageUrl="/pimgs/17.png"
+            githubUrl="https://github.com/Semirss/weather-web"
           />
         </div>
       </motion.div>
