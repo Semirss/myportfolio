@@ -70,7 +70,7 @@ export default function Projects() {
   return (
     <div
       id="Project"
-      className=" py-10 px-4"
+      className=" py-20 m-20 align-middle px-4"
     >
       <motion.h2
         className="text-3xl text-white font-bold text-center mb-10"

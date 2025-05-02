@@ -20,7 +20,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="About" style={{ backgroundColor: "#0a192f" }}>
+    <div id="About" style={{ backgroundColor: "#0a192f", margin:"50px", border:"1px solid #fff", borderRadius:"20px", padding:"20px" }}>
       <motion.section
         className="max-w-screen-xl mx-auto px-6 lg:px-16 rounded-2xl shadow-lg"
         initial={{ opacity: 0, y: 50 }}
@@ -37,7 +37,7 @@ const About = () => {
             transition={{ duration: 0.8, ease: "easeOut" }}
             viewport={{ once: true }}
           >
-            <h1 className="text-3xl sm:text-4xl font-extrabold text-indigo-600 mb-6">
+            <h1 className="text-3xl sm:text-4xl  text-center text-white mb-6">
               {typedText}
               {typedText.length < fullText.length && (
                 <span className="animate-pulse">|</span>

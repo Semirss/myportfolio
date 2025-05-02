@@ -73,9 +73,9 @@ const SocialSidebar: React.FC = () => {
               href={social.url}
               target="_blank"
               rel="noopener noreferrer"
-              className={`group flex items-center w-fit ${social.color} ${social.hover} text-white rounded-r-full transition-all duration-150`}
+              className={`group flex items-center w-fit ${social.color} ${social.hover} pr-2 text-white rounded-r-full transition-all duration-150`}
               whileHover={{ x: 8 }}
-              whileTap={{ scale: 0.95 }}
+              whileTap={{ scale: 0.98 }}
             >
               <div className="w-12 h-12 flex items-center justify-center text-2xl">
                 {social.icon}
@@ -83,7 +83,7 @@ const SocialSidebar: React.FC = () => {
               <span
                 className="overflow-hidden whitespace-nowrap 
                            max-w-0 group-hover:max-w-[160px]
-                           pl-0 group-hover:pl-2 
+                           pl-0 group-hover:pl-2 pr-0 
                            transition-all duration-300 text-sm"
               >
                 {social.name}
