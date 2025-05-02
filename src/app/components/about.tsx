@@ -20,7 +20,7 @@ const About = () => {
   }, []);
 
   return (
-    <div id="About" style={{ backgroundColor: "#0a192f", margin:"50px", border:"1px solid #fff", borderRadius:"20px", padding:"20px" }}>
+    <div id="About" style={{ backgroundColor: "#0a192f", margin:"10px", border:"1px solid #fff", borderRadius:"20px", padding:"20px" }}>
       <motion.section
         className="max-w-screen-xl mx-auto px-6 lg:px-16 rounded-2xl shadow-lg"
         initial={{ opacity: 0, y: 50 }}
