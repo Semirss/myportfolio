@@ -65,7 +65,7 @@ const HeroSection = () => {
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <section className="relative h-[45rem]  overflow-hidden">
+    <section className="relative h-[62rem]  overflow-hidden">
       {/* Arc shape above everything */}
       <div className="absolute top-0 left-0 w-full h-32 md:h-30 bg-indigo-700 z-10 rounded-b-[50%]" />
 
