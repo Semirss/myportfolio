@@ -65,7 +65,7 @@ const HeroSection = () => {
   const handleLinkClick = () => setMenuOpen(false);
 
   return (
-    <section className="relative h-[62rem]  overflow-hidden">
+    <section className="relative h-[50rem]  overflow-hidden">
       {/* Arc shape above everything */}
       <div className="absolute top-0 left-0 w-full h-32 md:h-30 bg-indigo-700 z-10 rounded-b-[50%]" />
 
@@ -150,9 +150,9 @@ const HeroSection = () => {
           animate={{ opacity: 1, x: 0 }}
           transition={{ delay: 0.3, duration: 0.7 }}
         >
-          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 mt-0">
+          <h1 className="text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 mt-0"style={{fontFamily: "calibri"}}>
             Hi, I&apos;m{" "}
-            <span className="text-indigo-600 border-r-2 border-indigo-600 pr-1 animate-pulse">
+            <span className=" text-white border-r-2 border-indigo-600 pr-1 animate-pulse" style={{fontFamily: "calibri"}}>
               {nameText}
             </span>
           </h1>

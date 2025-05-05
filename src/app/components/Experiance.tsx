@@ -55,6 +55,10 @@ const ExperienceZigzag: React.FC = () => {
             {experiences.map((exp, index) => (
               <motion.div
                 key={index}
+                style={{
+                  border: "0.5px solid #545454",
+                  background: "linear-gradient(135deg, #000630,#8330ea  )",
+                }}
                 className={`relative bg-zinc-800 hover:bg-zinc-700 transition-all p-6 rounded-xl shadow-xl w-full sm:w-1/2 md:w-3/4 lg:w-2/3 ${
                   index % 2 === 0 ? "mr-auto" : "ml-auto"
                 }`}

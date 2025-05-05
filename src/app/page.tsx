@@ -11,7 +11,7 @@ import SocialSidebar from "./components/SocialSidebar";
 import Footer from "./components/Footer";
 export default function Home() {
   return (
-   <main style={{ backgroundColor: "#0a192f" }}>
+   <main style={{ backgroundColor: "#0a192f" ,fontFamily: "calibri" }}>
     
      <HeroSection />
      <SocialSidebar />

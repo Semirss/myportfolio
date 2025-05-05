@@ -36,7 +36,11 @@ const ContactMe = () => {
         whileInView={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.7 }}
         viewport={{ once: true }}
-        className="max-w-2xl mx-auto bg-zinc-900 p-8 rounded-2xl shadow-2xl border border-amber-50"
+        style={{
+          border: "0.5px solid #545454",
+          background: "linear-gradient(135deg, #8330ea ,#000630)",
+        }}
+        className="max-w-2xl mx-auto p-8 rounded-2xl shadow-2xl border border-amber-50"
       >
         <h2 className="text-3xl font-bold text-center mb-6">Contact Me</h2>
         <form ref={formRef} onSubmit={sendEmail} className="space-y-6">
@@ -46,7 +50,7 @@ const ContactMe = () => {
               type="text"
               name="from_name"
               required
-              className="w-full px-4 py-2 bg-black border border-blue-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
+              className="w-full px-4 py-2 bg-white border border-blue-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
             />
           </div>
           <div>
@@ -55,7 +59,7 @@ const ContactMe = () => {
               type="email"
               name="from_email"
               required
-              className="w-full px-4 py-2 bg-black border border-blue-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
+              className="w-full px-4 py-2 bg-white border border-blue-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-white"
             />
           </div>
           <div>
@@ -64,7 +68,7 @@ const ContactMe = () => {
               name="message"
               required
               rows={5}
-              className="w-full px-4 py-2 bg-black border border-blue-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-white resize-none"
+              className="w-full px-4 py-2 bg-white border border-blue-500 rounded-xl focus:outline-none focus:ring-2 focus:ring-blue-400 text-white resize-none"
             />
           </div>
           <div className="text-center">

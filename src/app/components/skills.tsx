@@ -48,7 +48,11 @@ const Skills: React.FC = () => {
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}
-              className="group relative p-4 rounded-xl bg-zinc-800 hover:bg-zinc-700 transition-colors shadow-lg"
+              style={{
+                border: "0.5px solid #545454",
+                background: "linear-gradient(135deg, #8330ea ,#000630)",
+              }}
+              className="group relative p-4 rounded-xl hover:bg-zinc-700 transition-colors shadow-lg"
               initial={{ opacity: 0, y: 40 }}
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.4, delay: index * 0.05 }}

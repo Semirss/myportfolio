@@ -43,39 +43,45 @@ const ReviewCarousel = () => {
 
   return (
     <div id="Review" className="w-full py-10 px-4 text-white">
-      <div style={{border:"1px solid #fff"}} className="max-w-xl mx-auto p-6 rounded-2xl shadow-xl text-center">
+      <div
+        style={{
+          border: "0.5px solid #545454",
+          background: "linear-gradient(135deg, #000, #8330ea)",
+        }}
+        className="mx-auto p-6 rounded-2xl shadow-amber-50 text-center"
+      >
         <div className="relative h-60">
           <AnimatePresence mode="wait">
-            <motion.div
-              key={reviews[index].id}
-              initial={{ opacity: 0, x: 50 }}
-              animate={{ opacity: 1, x: 0 }}
-              exit={{ opacity: 0, x: -50 }}
-              transition={{ duration: 0.4 }}
-              className="absolute w-full top-0 left-0"
-            >
-              <div className="flex flex-col items-center">
-                <img
-                  src={reviews[index].avatar}
-                  alt={reviews[index].name}
-                  className="w-16 h-16 rounded-full border-2 border-blue-500 mb-4"
-                />
-                <p className="text-lg font-medium text-gray-100 dark:text-gray-100">
-                  “{reviews[index].text}”
-                </p>
-                <span className="mt-4 text-sm text-gray-500 dark:text-gray-400">
-                  — {reviews[index].name}
-                </span>
-              </div>
-            </motion.div>
+        <motion.div
+          key={reviews[index].id}
+          initial={{ opacity: 0, x: 50 }}
+          animate={{ opacity: 1, x: 0 }}
+          exit={{ opacity: 0, x: -50 }}
+          transition={{ duration: 0.4 }}
+          className="absolute w-full top-0 left-0"
+        >
+          <div className="flex flex-col items-center">
+            <img
+              src={reviews[index].avatar}
+              alt={reviews[index].name}
+              className="w-16 h-16 rounded-full border-2 border-blue-500 mb-4"
+            />
+            <p className="text-lg font-medium text-gray-100 dark:text-gray-100">
+              “{reviews[index].text}”
+            </p>
+            <span className="mt-4 text-sm text-gray-300 dark:text-gray-400">
+              — {reviews[index].name}
+            </span>
+          </div>
+        </motion.div>
           </AnimatePresence>
         </div>
         <div className="flex justify-center gap-6 mt-6">
           <button onClick={prevReview}>
-            <ChevronLeft className="w-6 h-6 text-gray-100 dark:text-gray-300 hover:scale-110 transition-transform" />
+        <ChevronLeft className="w-6 h-6 text-gray-100 dark:text-gray-300 hover:scale-110 transition-transform" />
           </button>
           <button onClick={nextReview}>
-            <ChevronRight className="w-6 h-6 text-gray-100 dark:text-gray-300 hover:scale-110 transition-transform" />
+        <ChevronRight className="w-6 h-6 text-gray-100 dark:text-gray-300 hover:scale-110 transition-transform" />
           </button>
         </div>
       </div>
