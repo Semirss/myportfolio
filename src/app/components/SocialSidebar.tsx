@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useState } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import {
@@ -60,37 +61,61 @@ const SocialSidebar: React.FC = () => {
   return (
     <AnimatePresence>
       {showSidebar && (
-        <motion.div
-          className="hidden md:flex fixed top-1/3 left-0 z-50 flex-col space-y-3"
-          initial={{ x: -100, opacity: 0 }}
-          animate={{ x: 0, opacity: 1 }}
-          exit={{ x: -100, opacity: 0 }}
-          transition={{ type: "spring", stiffness: 200, damping: 20 }}
-        >
-          {socials.map((social, index) => (
-            <motion.a
-              key={index}
-              href={social.url}
-              target="_blank"
-              rel="noopener noreferrer"
-              className={`group flex items-center w-fit ${social.color} ${social.hover} pr-2 text-white rounded-r-full transition-all duration-150`}
-              whileHover={{ x: 8 }}
-              whileTap={{ scale: 0.98 }}
-            >
-              <div className="w-12 h-12 flex items-center justify-center text-2xl">
-                {social.icon}
-              </div>
-              <span
-                className="overflow-hidden whitespace-nowrap 
+        <>
+          {/* Desktop Sidebar (Left Side) */}
+          <motion.div
+            className="hidden md:flex fixed top-1/3 left-0 z-50 flex-col space-y-3"
+            initial={{ x: -100, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: -100, opacity: 0 }}
+            transition={{ type: "spring", stiffness: 200, damping: 20 }}
+          >
+            {socials.map((social, index) => (
+              <motion.a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`group flex items-center w-fit ${social.color} ${social.hover} pr-2 text-white rounded-r-full transition-all duration-150`}
+                whileHover={{ x: 8 }}
+                whileTap={{ scale: 0.98 }}
+              >
+                <div className="w-12 h-12 flex items-center justify-center text-2xl">
+                  {social.icon}
+                </div>
+                <span
+                  className="overflow-hidden whitespace-nowrap 
                            max-w-0 group-hover:max-w-[160px]
                            pl-0 group-hover:pl-2 pr-0 
                            transition-all duration-300 text-sm"
+                >
+                  {social.name}
+                </span>
+              </motion.a>
+            ))}
+          </motion.div>
+
+          {/* Mobile Sidebar (Bottom Right) */}
+          <motion.div
+            className="fixed bottom-4 right-4 z-50 flex md:hidden flex-col gap-3 bg-black/70 px-2 py-3 rounded-xl shadow-lg"
+            initial={{ x: 50, opacity: 0 }}
+            animate={{ x: 0, opacity: 1 }}
+            exit={{ x: 50, opacity: 0 }}
+            transition={{ duration: 0.3 }}
+          >
+            {socials.map((social, index) => (
+              <a
+                key={index}
+                href={social.url}
+                target="_blank"
+                rel="noopener noreferrer"
+                className={`text-white text-xl p-2 rounded-full ${social.color} ${social.hover}`}
               >
-                {social.name}
-              </span>
-            </motion.a>
-          ))}
-        </motion.div>
+                {social.icon}
+              </a>
+            ))}
+          </motion.div>
+        </>
       )}
     </AnimatePresence>
   );

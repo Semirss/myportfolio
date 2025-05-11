@@ -11,19 +11,16 @@ interface Skill {
 const skills: Skill[] = [
   { name: "HTML", icon: "html", level: 100 },
   { name: "Javascript", icon: "javascript", level: 80 },
-
   { name: "CSS", icon: "css", level: 100 },
+  { name: "Unity", icon: "unity", level: 98 },
   { name: "Java", icon: "java", level: 50 },
   { name: "Python", icon: "python", level: 78 },
   { name: "PHP", icon: "php", level: 98 },
-  { name: "Dart", icon: "dart", level: 80 },
   { name: "React", icon: "react", level: 96 },
   { name: "Next.js", icon: "nextjs", level: 98 },
   { name: "MySQL", icon: "mysql", level: 80 },
   { name: "MongoDB", icon: "mongodb", level: 76 },
-  { name: "C++", icon: "cplusplus", level: 75 },
-  { name: "C#", icon: "csharp", level: 85 },
-  { name: "Flutter", icon: "flutter", level: 70 },
+  { name: "C#", icon: "c#", level: 85 },
   { name: "Tailwind", icon: "tailwind", level: 90 },
   { name: "Bootstrap", icon: "bootstrap", level: 85 },
   { name: "Laravel", icon: "laravel", level: 75 },
@@ -31,8 +28,12 @@ const skills: Skill[] = [
 ];
 
 const Skills: React.FC = () => {
+  // Split into two rows for mobile scroll
+  const firstRow = skills.filter((_, i) => i % 2 === 0);
+  const secondRow = skills.filter((_, i) => i % 2 !== 0);
+
   return (
-    <section id="Skill" className="py-16 px-4  text-white">
+    <section id="Skill" className="py-16 px-4 text-white">
       <div className="max-w-6xl mx-auto">
         <motion.h2
           className="text-3xl font-bold text-center mb-12"
@@ -44,7 +45,40 @@ const Skills: React.FC = () => {
           🧠 My Skills
         </motion.h2>
 
-        <div className="grid gap-8 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4">
+        {/* Mobile View: Two-row horizontal scroll */}
+        <div className="block md:hidden space-y-4">
+          {[firstRow, secondRow].map((row, rowIndex) => (
+            <div
+              key={rowIndex}
+              className="flex overflow-x-auto space-x-4 pb-1"
+              style={{ WebkitOverflowScrolling: "touch" }}
+            >
+              {row.map((skill, index) => (
+                <motion.div
+                  key={skill.name}
+                  className="min-w-[64px] h-[64px] flex items-center justify-center rounded-xl shadow-md shrink-0"
+                  style={{
+                    background: "linear-gradient(135deg, #8330ea ,#000630)",
+                    border: "0.5px solid #545454",
+                  }}
+                  initial={{ opacity: 0, y: 20 }}
+                  whileInView={{ opacity: 1, y: 0 }}
+                  transition={{ duration: 0.3, delay: index * 0.05 }}
+                  viewport={{ once: true }}
+                >
+                  <img
+                    src={`https://skillicons.dev/icons?i=${skill.icon}`}
+                    alt={skill.name}
+                    className="w-8 h-8"
+                  />
+                </motion.div>
+              ))}
+            </div>
+          ))}
+        </div>
+
+        {/* Desktop View: Grid with full skill cards */}
+        <div className="hidden md:grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-8 mt-10">
           {skills.map((skill, index) => (
             <motion.div
               key={skill.name}

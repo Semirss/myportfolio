@@ -126,10 +126,10 @@ export default function Projects() {
             githubUrl="https://github.com/Semirss/personal-assistant-AI"
           />
           <ProjectCard
-            title="More projects"
+            title="Angry bird and Flappy bird clone"
             description="Browse my GitHub for more work."
-            imageUrl="/pimgs/9.png"
-            githubUrl="https://github.com/Semirss"
+            imageUrl="/pimgs/18.png"
+            githubUrl="https://github.com/Semirss/Angry-Bird-clone"
           />
           <ProjectCard
             title="Portfolios & personal websites"

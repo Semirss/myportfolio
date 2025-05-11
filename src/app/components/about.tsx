@@ -45,15 +45,15 @@ const About = () => {
             </h1>
 
             <p className="text-lg sm:text-xl text-white mb-6 leading-relaxed">
-              Hello, I'm Semir Sultan 👋, a passionate Full Stack Developer and App Developer 📱 with a strong love
-              for coding and building scalable applications that provide seamless user experiences.
+              Hello, I'm Semir Sultan 👋, a passionate Game  and web Developer 📱 with a strong love
+              for coding and building scalable Games and webs that provide seamless user experiences.
               <br />
               <br />
-              I specialize in crafting dynamic web applications and mobile apps using{" "}
+              I specialize in crafting dynamic web applications and Game Development  using{" "}
               <a className="text-indigo-400 underline underline-offset-2" href="#Skill">
                 modern technologies
               </a>
-              . Whether it’s a responsive website or an innovative mobile app, I’m always excited to bring ideas to
+              . Whether it’s a responsive website or an innovative Game, I’m always excited to bring ideas to
               life! ✨
               <br />
               <br />

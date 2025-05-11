@@ -176,8 +176,8 @@ const HeroSection = () => {
               My GitHub
             </motion.a>
             <motion.a
-              href="/semir sultan's Resume.pdf"
-              download="Semir-Sultan-Resume.pdf"
+              href="/Semir_Sultan_Professional_Resume.pdf"
+              download="Semir_Sultan_Professional_Resume.pdf"
               whileHover={{ scale: 1.05 }}
               whileTap={{ scale: 0.95 }}
               className="bg-indigo-600 hover:bg-indigo-700 text-white font-semibold py-2 px-6 rounded-lg shadow-md transition"

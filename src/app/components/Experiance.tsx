@@ -28,10 +28,10 @@ const experiences: Experience[] = [
     description: "Built cross-platform apps and websites using Flutter and Firebase. react ,nextjs,... and other frameworks"
   },
   {
-    title: "Freelancing",
-    company: "Creative Studio",
+    title: "Internship",
+    company: "Efuye gela",
     period: "2025 - present",
-    description: "currently working on multiple projects using react, nextjs, and other frameworks. I am also working on my own projects and learning new technologies."
+    description: "currently working on multiple projects using Unity, c#,  I am also working on my own projects and learning new technologies."
   }
 ];
 
