@@ -6,7 +6,7 @@ import { useEffect, useState } from "react";
 const name = "Semir Sultan";
 
 const titles = [
-  "Full-Stack Developer",
+  "Game Developer",
   "Frontend Enthusiast",
   "Creative Coder",
   "UI/UX Explorer",
