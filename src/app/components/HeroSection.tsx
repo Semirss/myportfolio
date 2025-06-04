@@ -135,7 +135,7 @@ const HeroSection = () => {
           transition={{ duration: 0.6 }}
         >
           <Image
-            src="/3.jpg"
+            src="/pp.jpg"
             alt="Semir Sultan"
             width={256}
             height={256}
